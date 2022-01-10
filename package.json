@@ -1,6 +1,6 @@
 {
   "name": "strapi-parse",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "strapi-parse.js",
   "description": "Parse Strapi V4 API responses into easier to work with objects",
   "author": "Joshua Henry",
