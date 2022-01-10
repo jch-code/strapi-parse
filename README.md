@@ -48,14 +48,16 @@ const parsedAPIResponse = strapiParse(strapiAPIResponse);
 // strapi-parse Output
 [
   {
-      title: "Test Article",
-      slug: "test-article",
-      // ...
+    id: 1
+    title: "Test Article",
+    slug: "test-article",
+    // ...
   },
   {
-      title: "Test Article 2",
-      slug: "test-article-2",
-      // ...
+    id: 2
+    title: "Test Article 2",
+    slug: "test-article-2",
+    // ...
   }
 ]
 ```
@@ -79,6 +81,7 @@ const parsedAPIResponse = strapiParse(strapiAPIResponse);
 
 // strapi-parse Output
 {
+  id: 1
   title: "Test Article",
   slug: "test-article",
   // ...
