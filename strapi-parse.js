@@ -95,13 +95,6 @@ function parseCollection(collection) {
           }
 
           In this case, we just set the property to null.
-
-          If the attrbute is a multiple-choice Strapi relationship, and the 
-          relationship is not set, the format is
-         
-          {
-            data: []
-          }
         */
         if (entity.attributes[attr].data === null) {
           obj[attr] = null;
@@ -135,7 +128,7 @@ function parseSingle(entity) {
       obj[attr] = strapiParse(entity.data.attributes[attr])
 
       /*
-         If the attrbute is a 'Has One' Strapi relationship, and the 
+         If the attrbute is a one-choice Strapi relationship, and the 
          relationship is not set, the format is
          
           {

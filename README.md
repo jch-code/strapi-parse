@@ -22,7 +22,7 @@ const parsedAPIResponse = strapiParse(strapiAPIResponse);
 ### Collection Type
 ```javascript
 // Strapi API Response
-var strapiAPIResponse = {
+{
   data: [
     {
       id: 1,
@@ -63,7 +63,7 @@ var strapiAPIResponse = {
 ### Single Type
 ```javascript
 // Strapi API Response
-var strapiAPIResponse = {
+{
     data: {
         id: 1,
         attributes: {
