@@ -1,4 +1,4 @@
-![Version](https://img.shields.io/badge/version-1.0.4-blue.svg?cacheSeconds=2592000)
+![Version](https://img.shields.io/badge/version-1.0.6-blue.svg?cacheSeconds=2592000)
 
 # strapi-parse
 
