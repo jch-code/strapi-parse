@@ -24,7 +24,7 @@ Single types in Strapi return in the following format
   }
 }
 
-Components in Strapi do not follow the above format, but instead 
+Single Components in Strapi do not follow the above format, but instead 
 return as a simple object, Ex:
   {
     id: 0
@@ -32,7 +32,7 @@ return as a simple object, Ex:
     description: ""
   }
 
-Dynamic Zones in Strapi also do not follow the standard content
+Dynamic Zones and Repeatable Components in Strapi also do not follow the standard content
 type format, but instead return as a simple array of components
   [
     {
@@ -119,7 +119,7 @@ function parseSingle(entity) {
   var attributes = Object.getOwnPropertyNames(entity.data.attributes)
 
   var obj = {
-    id: entity.id
+    id: entity.id || entity.data.id
   }
 
   attributes.forEach(attr => {
