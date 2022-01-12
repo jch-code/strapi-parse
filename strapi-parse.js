@@ -46,6 +46,8 @@ type format, but instead return as a simple array of components
 function strapiParse(strapiResponse) {
   if (Array.isArray(strapiResponse.data))
     return parseCollection(strapiResponse);
+  else if (Array.isArray(strapiResponse))
+    return parseCollection(strapiResponse);
 
   return parseSingle(strapiResponse);
 }
@@ -83,7 +85,6 @@ function parseCollection(collection) {
       if (entity.attributes[attr] == null) {
         obj[attr] = null
       } else {
-
         obj[attr] = strapiParse(entity.attributes[attr])
 
         /*
