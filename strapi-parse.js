@@ -44,6 +44,8 @@ type format, but instead return as a simple array of components
   ]
 */
 function strapiParse(strapiResponse) {
+  if(!strapiResponse) return null;
+  
   if (Array.isArray(strapiResponse.data))
     return parseCollection(strapiResponse);
   else if (Array.isArray(strapiResponse))
